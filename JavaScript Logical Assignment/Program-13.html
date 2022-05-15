@@ -1,0 +1,50 @@
+<html>
+	<head>
+		<title>Program 13 </title>
+	</head>
+
+<body>
+	<script>
+	let array = [1,2,3,4,5,6,7,8];
+		let sum = 0;
+	function UsingForLoop() {
+		
+		
+		for( let i=0; i<array.length;i++) {
+			sum+=array[i];
+			}
+			document.write("Sum of n numbers in an array using for-loop is " + sum);
+		
+		}	
+		
+	function UsingWhileLoop(){
+		let i=0;
+		while(i<array.length) {
+			sum+=array[i];
+			i++;
+		}
+		document.write("Sum of n numbers in an array using while loop is " + sum);
+	} 	
+	
+	function UsingDoWhileLoop() {
+		let i=0;
+		do {
+		sum+=array[i];
+		i++;
+	}while(i<array.length);
+	
+	document.write("Sum of n numbers in an array using do-while loop is "+sum);
+	}
+	
+	</script>
+	<h3>Sum of n numbers using For-Loop</h3>
+	<button onclick="UsingForLoop()">Click Me 1</button> <br><br>
+	<h3>Sum of n numbers using While-Loop</h3>
+	<button onclick="UsingWhileLoop()">Click Me 2</button> <br><br>
+	<h3>Sum of n numbers using Do-While Loop</h3>
+	<button onclick="UsingDoWhileLoop()">Click Me 3</button>
+	
+	
+</body>
+
+</html>

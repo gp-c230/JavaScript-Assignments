@@ -1,0 +1,43 @@
+<html>
+	<head>
+		<title> Next_20_LeapYears</title>
+	</head>
+	
+<body>
+	<h3>Program to print Next_20_LeapYears</h3>
+	<script>
+			
+		function Next_20_LeapYears(year, counter) {
+			counter = 20;
+			
+			year = prompt("Please enter a year to find out next 20 leap years");
+			document.write("Next 20 Leap Years are : ");
+			
+			while(counter >= 0) {
+			
+			
+			if((year % 4 == 0) && ((year%400 == 0) || (year % 100!==0))) {
+			
+				
+				document.write("<br>");
+				document.write(year);
+			
+				
+				year++;
+				counter--;
+			}
+			else {
+				year++;
+			}
+			
+			
+			}
+			document.write("\n");
+			
+		}
+	
+	</script>
+	
+	<button onclick="Next_20_LeapYears()"> Click Me</button>
+</body>
+</html>
