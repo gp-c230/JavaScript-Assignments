@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<title>Object Program-2</title>
+	</head>
+
+<body>
+	<script>
+	class Rectangle { 
+		
+		constructor(height, width) {
+		
+		this.height = height;
+		this.width = width;
+	  }
+	}
+	
+		Rectangle.prototype.getArea = function()
+		{
+			document.write("Getting Area using prototype property : " +this.width * this.height);
+		}
+		
+	const rectangle1 = new Rectangle(9,10);
+	
+	document.write("Height of rectangle is  "+ rectangle1.height+"<br>");
+	document.write("width of a rectangle is " + rectangle1.width+"<br>");
+	
+	let area = rectangle.getArea();
+	document.write(area);
+	document.write(Rectangle.prototype);
+		
+
+	</script>
+</body>
+
+</html>
