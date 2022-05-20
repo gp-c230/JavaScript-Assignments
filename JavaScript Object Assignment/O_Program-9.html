@@ -1,0 +1,40 @@
+<html>
+<head>
+  <title> Object Program-8 </title>
+</head>
+
+ <body>
+
+	<script>
+		function Person(firstName,lastName,age,skills,dateOfbirth,address,married,profession)
+		{
+			this.firstName = firstName;
+			this.lastName = lastName;
+			this.age = age;
+			this.skills = skills;
+			this.dateOfbirth = dateOfbirth;
+			this.address = address;
+			this.married = married;
+			this.profession = profession;
+		}
+		Amithabh = new Person("amithab","bachan",22,["c"],"24/10/1996",{city:"hyderabad",pincode:"521185"},"false","sr analyst");
+		Abhishek = new Person("abhisheik",21,"HTML","08/06/1997","false","jr analyst");
+		Aaradhya = new Person("Aaradhya",15,"01/01/2007","false","film");
+
+		var Abhishek = Object.create(Amithabh); 
+		var Aaradhya = Object.create(Abhishek); 
+
+		print = function()
+		{
+			document.write(Amithabh+"<br>");
+			document.write(Abhishek.lastName+"<br>");
+			document.write(Abhishek.address+"<br>");
+			document.write(Aaradhya.lastName+"<br>");
+			document.write(Aaradhya.skills+"<br>");
+			document.write(Aaradhya.address+"<br>");
+			document.write(Aaradhya.firstName);
+		}();
+
+	</script>
+ </body>
+</html>

@@ -1,0 +1,72 @@
+<html>
+<head>
+  <title> Object Program-3 </title>
+</head>
+
+ <body>
+
+	<script>
+	
+		var Rectangle = function(width,height) //declaring object with "constructor function"
+			{
+			this.width = width;
+			this.height = height;
+			this.area = function()
+			{
+			document.write("Area of the Rectangle is: " +this.width * this.height+"<br>");
+			}
+			}
+
+		var Rect1 = new Rectangle(2,4);
+		var Rect2 = new Rectangle(8,2);
+		var Rect3 = new Rectangle(2,6);
+		var Rect4 = new Rectangle(5,4);
+
+		document.write("Width "+Rect1.width+"<br>");
+		document.write("Height "+Rect1.height+"<br>");
+		Rect1.area();
+		document.write("\n");
+		document.write("Width "+Rect2.width+"<br>");
+		document.write("Height "+Rect2.height+"<br>");
+		Rect2.area();
+		document.write("\n") 
+		document.write("Width "+Rect3.width+"<br>");
+		document.write("Height "+Rect3.height+"<br>");
+		Rect3.area();
+		document.write("\n")
+		document.write("Width "+Rect4.width+"<br>");
+		document.write("Height "+Rect4.height);
+		Rect4.area();
+		
+
+// Assignment 2----------------------------
+
+		Rectangle.prototype.getArea = function()
+		{
+		document.write("Area using prototype : " +this.width * this.height+"<br>");
+		}
+
+		document.write(Rectangle.prototype+"<br>");
+		Rect1.getArea();
+		Rect2.getArea();
+		Rect3.getArea();
+		Rect4.getArea();
+
+// Assignment 3----------------------------
+
+		Rectangle.prototype.getAreaForRect = function(width,height) //this is because of Global scope and LOcal scope.
+		{
+		document.write(" Area using prototype : " +width * height+"<br>");
+		}
+
+		document.write(Rectangle.prototype+"<br>");
+		Rect1.getAreaForRect(2,3);
+		Rect2.getAreaForRect(8,6);
+		Rect3.getAreaForRect(5,3);
+		Rect4.getAreaForRect(1,6);
+
+	</script>
+
+ </body>
+
+</html>
