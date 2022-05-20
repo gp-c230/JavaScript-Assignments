@@ -1,0 +1,32 @@
+<html>
+<head>
+  <title> Functional Program-2 </title>
+</head>
+
+ <body>
+
+	<script>
+	
+		var f1=function(square,double,x){
+		document.write(square(double(x))+"<br>")
+		};
+		var f2=function(double,square,x){
+		document.write(double(square(x))+"<br>")
+		};
+
+		function square(x){
+			return x*x;
+		}
+		function double(x){
+			return x*2;
+		}
+		f1(square,double,5);
+		f1(square,double,10);
+		f2(double,square,5);
+		f2(double,square,10);
+
+	</script>
+
+ </body>
+
+</html>

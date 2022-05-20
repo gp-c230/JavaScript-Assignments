@@ -1,0 +1,35 @@
+<html>
+<head>
+  <title> Functional Program-4 </title>
+</head>
+
+ <body>
+
+	<script>
+		function square(x){
+		return x*x;
+		}
+		function map(arr,square){
+			let res=[];
+			for(i=0;i<arr.length;i++){
+				res.push(square(arr[i]));
+			}
+			document.write(res+"<br>");
+		}
+
+		const arr=[1,2,3,4,5];
+		map(arr,square);//-->[1,4,9,16,25]
+
+		function map1(arr,Math){
+			let res=[];
+			for(i=0;i<arr.length;i++){
+				res.push(Math.sqrt(arr[i]));
+			}
+			document.write(res);
+		}
+		map1([1,4,9,16,25],Math);//-->[1,2,3,4,5]
+	</script>
+
+ </body>
+
+</html>
