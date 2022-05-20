@@ -1,0 +1,29 @@
+<html>
+	<head>
+	 
+		<form>
+		<input type="button" onclick="createTable()" value="Create a table">
+		</form> 
+</head>
+
+<body>
+<table id="myTable" border="1">
+	<script>
+		function createTable()
+		{
+		Num_rows = window.prompt("Input number of rows", 1);
+		Num_columns = window.prompt("Input number of columns",1);
+		  
+		 for(var row=0;row<parseInt(Num_rows,10);row++)
+		  {
+		   var x=document.getElementById('myTable').insertRow(row);
+		   for(var column=0;column<parseInt(Num_columns,10);column++)  
+			{
+			 var y=  x.insertCell(column);
+			 y.innerHTML="Row-"+row+" Column-"+column; 
+			}
+		   }
+		}
+	</script>
+</body>
+</html>

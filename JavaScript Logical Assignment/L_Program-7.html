@@ -1,0 +1,38 @@
+<html>
+<head>
+  <title> Logical Program-7 </title>
+</head>
+<style>
+    .myDiv{
+        border: 1px outset black;
+        background-color: lightpink;
+        text-align: center;
+    }
+</style>
+ <body>
+	<div class="myDiv">
+    <textfield>currency(dollar):</textfield>
+    <input id="dollar" value=""><br>
+    <button id="button" onclick="myFunction()">convert</button><br>
+    <textfield>currency(INR):</textfield>
+    <textfield id="inr">INR</textfield><br>
+    <textfield>currency(yen):</textfield>
+    <textfield id="yen">yen</textfield><br>
+    <textfield>currency(euro):</textfield>
+    <textfield id="euro">euro</textfield><br>
+    <textfield>currency(pound):</textfield>
+    <textfield id="pound">pound</textfield><br>    
+    </div>
+	<script>
+	function myFunction()
+	{
+		var dollar=parseInt(document.getElementById("dollar").value);
+		document.getElementById("inr").innerHTML=dollar*74.28+" Inr";
+		document.getElementById("yen").innerHTML=dollar*109.14+" Yen";
+		document.getElementById("euro").innerHTML=dollar*0.84+" Euro";
+		document.getElementById("pound").innerHTML=dollar*0.72+" Pound";
+	}
+	myFunction
+	</script>
+ </body>
+</html>

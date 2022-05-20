@@ -1,0 +1,26 @@
+<html>
+<head>
+  <title> Logical Program-9 </title>
+</head>
+ <body>
+	<script>
+		var array1=['a','b','c','d','e'];
+		var array2=[1,2,3,4,5];
+		var len;
+		var newarray=[];
+
+		if(array1.length>array2.length){
+			len=array1.length;
+		}
+		else{
+			len=array2.length;
+		}
+
+		for(i=0;i<len;i++){
+			newarray.push(array1[i]);
+			newarray.push(array2[i]);
+		}
+		document.write(newarray);
+	</script>
+ </body>
+</html>

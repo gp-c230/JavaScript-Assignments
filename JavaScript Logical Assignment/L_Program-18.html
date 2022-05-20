@@ -1,0 +1,28 @@
+<html>
+<head>
+	<title>Logical Program-18</title>
+</head>
+ <body>  
+   
+ <div class="myDiv">        
+ <h3>Translate English to Pig Latin</h3>        
+ <textfield>English: </textfield>        
+ <input id="inputtext" value=""><br>        
+ <button id="translate" onclick="myFunction()">Translate</button><br> 
+       <textfield id="output"></textfield>    
+ </div> 
+ 
+   <script>
+		function myFunction(){
+		var text=document.getElementById("inputtext").value;
+		var word_in_text=text.split(" ");
+		var str="";
+		for(i=0;i<word_in_text.length;i++){
+			str=str+word_in_text[i].slice(1,)+word_in_text[i][0]+"ay ";
+		}
+		document.getElementById("output").innerHTML="<b>Pig Latin : </b>"+str;
+	}
+ 
+	</script>
+ </body>
+ </html>

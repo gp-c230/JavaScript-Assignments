@@ -1,0 +1,26 @@
+<html>
+<head>
+  <title> Logical Program-4 </title>
+</head>
+
+ <body>
+	  <textfield>headsRatio:</textfield>
+	  <input type="Enter a number" id="headsratio" value=""><br>
+	  <textfield>input no:</textfield>
+	  <input type="Enter a number" id="inputnumber" value=""><br>
+	  <button id="button" onclick="myFunction()">Button</button><br>
+	  <textfield id="output"></textfield>
+  
+	<script>
+		function myFunction() {
+		var hr=parseInt(document.getElementById("headsratio").value);
+		var n=parseInt(document.getElementById("inputnumber").value);
+		document.getElementById("output").innerHTML = headsRatio(n,hr);
+
+	}
+	function headsRatio(n,hr){
+		return n/hr;
+	}
+	</script>
+ </body>
+</html>
